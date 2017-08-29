@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Weather App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<h2>Weather App 2.0</h2>
+			<p id="author">by Pavlo Sapsai</p>
+		</div>
+		<div id="search">
+			<p>Country: <input type="text" name="Country" id="country"></p>
+			<p>City: <input type="text" name="City" id="city"></p>
+			<p id="button"><button onclick="getWeather()">Search</button></p>
+		</div>
+	</header>
+	<div class="container">
+		<div class="big_container">
+			<h3 id="location">Ivano-Frankivsk, UA</h3>
+			<p id="coordinates">Elv: 280 m;  48.90 °N, 24.70 °E</p></div>
+		<div class="small_left">
+			<div id="weatherInfo">
+				<p>Presure: <strong id="pressure">1015 MPa</strong></p>
+				<p>Visibility: <strong id="visibility">10.0 km</strong></p>
+				<p>Humidity: <strong id="humidity">88%</strong></p>
+				<p id="wind">Wind from the SW at 4 KPH</p>
+			</div>
+		</div>
+		<div class="small_rigth">
+			<div id="conditions">
+				<img src="img/ico/tstorms.png">
+			</div>
+			<div id="temperature">
+				<h4>28 &#8451</h4>
+				<p>Feels like 28 &#8451</p>
+			</div>
+			<div id="timeInfo">
+				<p id="time">Mon, 05 Jun 2017 13:48:48 +0300</p>
+				<p id="update">Last Updated on June 5, 1:30 PM EEST</p>
+			</div>
+		</div>
+	</div>
+	<div class=container2>
+		<button onclick="getForecast10()">10 day forecast</button>
+		<button onclick="getForecastHourly()">Hourly forecast</button>
+	</div>
+	<div class="container3">
+
+	</div>
+	<script type="text/javascript" src="src/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="src/app.js"></script> 
+	<script type="text/javascript" src="src/app1.js"></script> 
+	<script type="text/javascript" src="src/forecast10.js"></script>
+	<script type="text/javascript" src="src/forecastHourly.js"></script>
+	<script type="text/javascript" src="src/style.js"></script>
+</body>
+</html>
